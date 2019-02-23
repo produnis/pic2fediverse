@@ -17,13 +17,13 @@ import sys
 #		$:>  cd /path/to/picturefolder							
 # 		$:>  /path/to/pic2diaspora.py
 #
-# This script will create the file "0archive_posted.txt"
+# This script will create the file "0archive_diaspora.txt"
 # in the given picture directory (check for write permission). 
 # In this textfile, filenames of pictures already posted are stored.
 #
 # The script looks up all pictures in the given directory
-# and compares their filenames with "0archive_posted.txt"
-# This script won't upload any pictures included in "0archive_posted.txt"
+# and compares their filenames with "0archive_diaspora.txt"
+# This script won't upload any pictures included in "0archive_diaspora.txt"
 # The script will take the first "new" pictures it finds, post it to Diaspora and exit. 
 # If there is a .txt-file with the same basename as the picture-file (e.g. "picture1.jpg" and "picture1.txt")
 # The txt-file's content will be posted along with the picture.
@@ -56,7 +56,7 @@ print('picture directory is %s' % (picdir))
 
 
 # check if there is my archive_posted.txt in picture directory
-archive_path = '%s/%s' % (picdir, '0archive_posted.txt')
+archive_path = '%s/%s' % (picdir, '0archive_diaspora.txt')
 print(archive_path)
 ismylogthere = os.path.exists(archive_path)
 if ismylogthere == False:
