@@ -21,6 +21,7 @@ The scripts will create the file "`0archive_mastodon.txt`" / "`0archive_friendic
 
 If there is a `.txt`-file with the same basename as the picture-file (e.g. "`picture1.jpg`" and "`picture1.txt`"), the txt-file's content will be posted as a Text along with the picture. 
 
+### Cronjob example
 So, one picture is posted per round. Thus, the scripts are ment to be run via cronjob.
 ```
   # Cron.Example:
