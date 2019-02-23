@@ -5,14 +5,14 @@ This scripts post pictures from a given directory to a given Fediverse-account. 
 
 
 ## Diaspora
-`pic2diaspora.py` - posts pictures from a given directory to a given Disapora-Account. It posts one picture per round. It requires https://github.com/marekjm/diaspy 
+`pic2diaspora.py` - posts pictures from a given directory to a given Disapora-Account. It posts one picture per round. It requires `Diaspy` (https://github.com/marekjm/diaspy).
 
 ## Friendica
 `pic2friendica.py` - posts pictures from a given directory to a given Friendica-Account. It posts one picture per round. 
 
 
 ## Mastodon
-`pic2mastodon.py` - posts pictures from a given directory to a given Mastodon-Account. It posts one picture per round. It uses a bot access key for login and post. You can use e.g. https://takahashim.github.io/mastodon-access-token/ to generate your access key.
+`pic2mastodon.py` - posts pictures from a given directory to a given Mastodon-Account. It posts one picture per round. It requires `Mastodon.py` (https://github.com/halcy/Mastodon.py). It uses a bot access key for login and post. You can use e.g. https://takahashim.github.io/mastodon-access-token/ to generate your access key.
 
 ## General
 You need to edit the scripts to fit your account-login-settings.
