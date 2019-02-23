@@ -37,10 +37,10 @@ import sys
 # 		CHANGE TO FIT YOUR SETTINGS
 #---------------------------------------------
 podurl 		= 'https://your.pod.org' 	# The URL of your account's pod
-poduser 	= 'USERNAME'				# Username	
-poduserpwd 	= 'SUPERSECRET'				# Password
+poduser 	= 'USERNAME'			# Username	
+poduserpwd 	= 'SUPERSECRET'			# Password
 standardmessage = '#cool #hashtags'		# message posted with each photo, e.g. "#nsfw"
-aspect_to_post  = "public" 				# ids of aspects to post to, eg. = (4520, 4521) 
+aspect_to_post  = "public" 			# ids of aspects to post to, eg. = (4520, 4521) 
 
 #---------------------------------------------
 #########################################################
