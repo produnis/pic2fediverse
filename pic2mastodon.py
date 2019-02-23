@@ -9,7 +9,7 @@ import sys
 #
 # Requires:
 #		- python3
-#		- Mastodon.py
+#		- Mastodon.py (https://github.com/halcy/Mastodon.py)
 #
 # Usage:
 #		# script will fail if it is not called from picturefolder!!
