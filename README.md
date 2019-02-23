@@ -26,4 +26,5 @@ So, one picture is posted per round. Thus, the scripts are ment to be run via cr
 ```
   # Cron.Example:
   # post every 6 hours a picture
-  0 */6 * * * 	cd /path/to/picturefolder; /path/to/pic2mastodon.py```
+  0 */6 * * * 	cd /path/to/picturefolder; /path/to/pic2mastodon.py
+```
