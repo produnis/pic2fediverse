@@ -35,10 +35,10 @@ import sys
 #---------------------------------------------
 # 		CHANGE TO FIT YOUR SETTINGS
 #---------------------------------------------
-podurl 		= 'your.pod.url' 			# The URL of your account's pod WITHOUT "https://"
-poduser 	= 'USERNAME'					# Username	
-poduserpwd 	= 'SUPERSECRET'					# Password
-standardmessage = '#cool #hashtags'		# message posted with each photo, e.g. "#nsfw"
+podurl 		= 'your.pod.url' 	# The URL of your account's pod WITHOUT "https://"
+poduser 	= 'USERNAME'		# Username	
+poduserpwd 	= 'SUPERSECRET'		# Password
+standardmessage = '#cool #hashtags'	# message posted with each photo, e.g. "#nsfw"
 
 #---------------------------------------------
 #########################################################
