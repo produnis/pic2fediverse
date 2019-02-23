@@ -33,12 +33,12 @@ import sys
 #---------------------------------------------
 # 		CHANGE TO FIT YOUR SETTINGS
 #---------------------------------------------
-podurl 			= 'https://mastodon.url'	# The URL of your account's pod
-standardmessage = '#cool #hastags '			# message posted with each photo, e.g. "#nsfw"
-visibility 		= "public"					# "direct", "private", "unlisted", "public"
-access_token 	= "YY XX ZZ " 				# The acces-token is needed to login/post to your account
-											# You can e.g. use https://takahashim.github.io/mastodon-access-token/
-											# to generate your access-key.
+podurl 		= 'https://mastodon.url'	# The URL of your account's pod
+standardmessage = '#cool #hastags '		# message posted with each photo, e.g. "#nsfw"
+visibility 	= "public"			# "direct", "private", "unlisted", "public"
+access_token 	= "YY XX ZZ " 			# The acces-token is needed to login/post to your account
+						# You can e.g. use https://takahashim.github.io/mastodon-access-token/
+						# to generate your access-key.
 #---------------------------------------------
 #########################################################
 # no need to change anything after here
