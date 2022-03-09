@@ -16,8 +16,7 @@ from nio import AsyncClient, LoginResponse, UploadResponse
 #
 # This script posts pictures from a given directory
 # to a given Matrix-room. It posts one picture per round.
-# For sending to matrix, it uses the example-code
-# provided here:
+# This script is based on the example-code provided here:
 # https://matrix-nio.readthedocs.io/en/latest/examples.html
 #
 # Requires:
@@ -35,6 +34,8 @@ from nio import AsyncClient, LoginResponse, UploadResponse
 # in the given picture directory (check for write permission).
 # In this file, all login-auth-credentials for your matrix-user are stored.
 # When you run the script for a second time, these credentials are used for login.
+#
+# The matrix user needs to enter the matrix-room before this script can post pictures to that room!
 #
 # This script will create the file "0archive_matrix.txt"
 # in the given picture directory (check for write permission). In this textfile,

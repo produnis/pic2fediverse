@@ -8,18 +8,22 @@ This scripts post pictures from a given directory to a given Fediverse-account. 
 `pic2diaspora.py` - posts pictures from a given directory to a given Disapora-Account. It posts one picture per round. It requires `Diaspy` (https://github.com/marekjm/diaspy).
 
 ## Friendica
-`pic2friendica.py` - posts pictures from a given directory to a given Friendica-Account. It posts one picture per round. 
+`pic2friendica.py` - posts pictures from a given directory to a given Friendica-Account. It posts one picture per round.
 
 
 ## Mastodon
 `pic2mastodon.py` - posts pictures from a given directory to a given Mastodon-Account. It posts one picture per round. It requires `Mastodon.py` (https://github.com/halcy/Mastodon.py). It uses a bot access key for login and post. You can use e.g. https://takahashim.github.io/mastodon-access-token/ to generate your access key.
 
+## Matrix
+`pic2matrix.py` - posts pictures from a given directory witch a given Matrix-User to a given Matrix-Room. It posts one picture per round. The Matrix-User needs to enter the room before posting with this script. 
+
+
 ## General
 You need to edit the scripts to fit your account-login-settings.
 
-The scripts will create the file "`0archive_mastodon.txt`" / "`0archive_friendica.txt`" / "`0archive_diaspora.txt`" (depending on what script you use) in the given picture directory (check for write permission). In this textfiles, filenames of pictures already posted are stored. The scripts look up all pictures in the given directory and compare their filenames with "`0archive_*.txt`". The scripts won't upload any pictures with filenames included in "`0archive_*.txt`". The scripts will post the first "new" picture they find to mastodon/friendica/diaspora, write the filename into "`0archive_*.txt`" and exit. 
+The scripts will create the file "`0archive_mastodon.txt`" / "`0archive_friendica.txt`" / "`0archive_diaspora.txt`" (depending on what script you use) in the given picture directory (check for write permission). In this textfiles, filenames of pictures already posted are stored. The scripts look up all pictures in the given directory and compare their filenames with "`0archive_*.txt`". The scripts won't upload any pictures with filenames included in "`0archive_*.txt`". The scripts will post the first "new" picture they find to mastodon/friendica/diaspora, write the filename into "`0archive_*.txt`" and exit.
 
-If there is a `.txt`-file with the same basename as the picture-file (e.g. "`picture1.jpg`" and "`picture1.txt`"), the txt-file's content will be posted as a Text along with the picture. 
+If there is a `.txt`-file with the same basename as the picture-file (e.g. "`picture1.jpg`" and "`picture1.txt`"), the txt-file's content will be posted as a Text along with the picture.
 
 ### Cronjob example
 So, one picture is posted per round. Thus, the scripts are ment to be run via cronjob.
