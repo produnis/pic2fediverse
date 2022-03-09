@@ -29,6 +29,13 @@ from nio import AsyncClient, LoginResponse, UploadResponse
 #		$:>  cd /path/to/picturefolder
 # 		$:>  /path/to/pic2matrix.py
 #
+# When the script runs for the first time, you are asked to type in
+# your username, matrixserver and password.
+# The script will create the file "0matrixcredentials.json"
+# in the given picture directory (check for write permission).
+# In this file, all login-auth-credentials for your matrix-user are stored.
+# When you run the script for a second time, these credentials are used for login.
+#
 # This script will create the file "0archive_matrix.txt"
 # in the given picture directory (check for write permission). In this textfile,
 # filenames of pictures already posted are stored.
@@ -50,13 +57,11 @@ from nio import AsyncClient, LoginResponse, UploadResponse
 room_id = "!UGziVBfWerjrNcWgXF:cactus.chat"     # The romm ID (NOT room name) of the matrix room to post to
 standardmessage= "Jippi"                        # message posted with each photo, e.g. "#nsfw"
 
-### no need to change anything from here...
-########################################################
+###############################################
+### no need to change anything from here... ###
+###############################################
 
-CONFIG_FILE = "credentials.json"
-
-# Check out main() below to see how it's done.
-
+CONFIG_FILE = "0matrixcredentials.json"
 
 def write_details_to_disk(resp: LoginResponse, homeserver) -> None:
     """Writes the required login details to disk so we can log in later without
