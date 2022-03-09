@@ -15,7 +15,7 @@ This scripts post pictures from a given directory to a given Fediverse-account. 
 `pic2mastodon.py` - posts pictures from a given directory to a given Mastodon-Account. It posts one picture per round. It requires `Mastodon.py` (https://github.com/halcy/Mastodon.py). It uses a bot access key for login and post. You can use e.g. https://takahashim.github.io/mastodon-access-token/ to generate your access key.
 
 ## Matrix
-`pic2matrix.py` - posts pictures from a given directory witch a given Matrix-User to a given Matrix-Room. It posts one picture per round. The Matrix-User needs to enter the room before posting with this script. 
+`pic2matrix.py` - posts pictures from a given directory with a given Matrix-User to a given Matrix-Room. It posts one picture per round. The Matrix-User needs to enter the room before posting with this script. 
 
 
 ## General
