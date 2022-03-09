@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import os
-import diaspy
+import diaspy # git clone https://github.com/marekjm/diaspy.git ; cd diaspy; sudo python3 setup.py install 
 import sys
 ########################################################
 #
