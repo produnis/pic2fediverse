@@ -16,6 +16,9 @@ from nio import AsyncClient, LoginResponse, UploadResponse
 #
 # This script posts pictures from a given directory
 # to a given Matrix-room. It posts one picture per round.
+# For sending to matrix, it uses the example-code
+# provided here:
+# https://matrix-nio.readthedocs.io/en/latest/examples.html
 #
 # Requires:
 #		- python3
